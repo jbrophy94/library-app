@@ -11,11 +11,13 @@ const dialog = document.querySelector(".dialog");
 const table = document.querySelector(".table");
 
 //Book constructor:
-function Book(title, pages, read, liked) {
-  this.title = title;
-  this.pages = pages;
-  this.read = read;
-  this.liked = liked;
+class Book {
+  constructor(title, pages, read, liked) {
+    this.title = title;
+    this.pages = pages;
+    this.read = read;
+    this.liked = liked;
+  }
 }
 
 //Add book to library (final line of form submit add event listener)
